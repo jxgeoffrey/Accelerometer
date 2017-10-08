@@ -99,22 +99,17 @@ Window {
 
         }
 
-        Timer {
+        Timer
+        {
             id: timer
-            interval: 5; running: true; repeat: true
+            interval: 5
+            running: true
+            repeat: true
             onTriggered:
             {
                 getAccelData()
 
             }
-        }
-
-        Video
-        {
-            id: player
-            anchors.top: root.bottom
-            anchors.bottom: parent.bottom
-//            source: "qrc:/big_buck_bunny_480p_surround-fix.avi"
         }
 
     }
